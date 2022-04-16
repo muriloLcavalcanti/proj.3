@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+html,body{
+    height: 100%; 
+    min-width: 100%; 
+}
+
+body{
+    position:fixed;
+    background-image: url("../css/Peyote.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+/*  MENU LATERAL  */
+
+.parent{
+    display: inline-block; 
+}
+
+.sidebar{   
+    min-width: 250px;
+    width:20%;
+    height: 100%;
+    position: fixed;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.644);    
+}
+
+.sidebar-pos{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);    
+}
+
+.sidebar img{
+    width: 100%;
+    max-width: 500px;    
+}
+
+.img-sidebar{
+    border:5px solid white;  
+    margin: 0px 10%;
+}
+
+.menu{
+    width: 50% auto;
+    margin:0px;
+    text-align: center;
+}
+
+.menu a{
+    color: #104a72;
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    margin: 5px 10%;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 0.1px solid ;
+}
+
+/*  Animação dos botões do menu  */
+.menu a:hover {
+    color: white;
+    background-image: url("../css/Abstract.jfif");
+    background-size:100%;
+    background-repeat: no-repeat;
+    transform: scale(1.1);
+    transition: 0.5s all;
+    border: 2px solid #c8f9ff;    
+}
+
+/*  ícones do menu  */
+.icons-social{
+    text-align: center;    
+    margin:20px auto;
+}
+
+.icons-social a{
+    text-decoration:none;
+    color: white;
+    background-color: #104a72;
+    width:40px;
+    height:40px;
+    border-radius:20px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.icons-social i{
+    line-height:40px;
+}
+
+
+/*  SESSÃO DE CONTEÚDO  */
+
+.content{
+    position:absolute;
+    left: 20%;
+    width: 90%;
+    height: 100%;
+    overflow-y:auto;
+    padding:0 10%;
+    min-width: 1100px;
+    min-height: 550px;
+}
+
+section.descricao{
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);   
+}
+
+section.descricao .bg-descricao{
+    padding: 30px;
+    background: linear-gradient(270deg,transparent, rgb(255, 255, 255))    
+}
+
+section.descricao h2{
+    color:rgb(61, 61, 61);
+    font-size: 46px;
+}
+
+section.descricao h2 > span,
+section.descricao h3 > span,
+section.descricao p > span
+{
+    color:#1d0979;
+}
+
+section.descricao h3{
+    margin-top:15px;
+    color: rgb(61, 61, 61);
+    font-size: 26px;
+}
+
+section.descricao p{
+    color:rgb(70, 70, 70);
+    font-size:19px;
+    margin-top:8px;
+    margin-left:15px;
+    font-weight: bold;
+    max-width: 50%;
+}
+
+/*
+Aplicar responsivo apartir dessas medidas
+900 x 700
+*/
