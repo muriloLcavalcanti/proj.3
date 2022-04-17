@@ -6,10 +6,12 @@
 
 body {
   /* Configurações do posicionamento dos elementos pricipais e view*/
-  height: auto;
+  height: 100vh;
   display: grid;
-  grid-template-columns: minmax(300px, 20%) minmax(80%, 1fr);
+  grid-template-columns: minmax(300px, 20%) 1fr;
   grid-template-areas: "sidebar main";
+
+  background-color: brown;
 
   /* Configurações do backgroud */
   background-image: url("../css/Peyote.png");
@@ -43,11 +45,6 @@ body {
   justify-content: center;
 }
 
-.icons-social {
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-}
 
 /* MENU */
 
@@ -74,19 +71,25 @@ body {
 
 /*  Animação dos botões do menu  */
 .menu a:hover {
-  color: white;
+  color: #43dbce;
+  -webkit-text-stroke: 0.5px #fff;
   background-image: url("../css/Abstract.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  transform: scale(1.1);
-  transition: 0.5s all;
-  border: 2px solid #c8f9ff;
+  transform: scale(1.05);
+  transition: 0.3s all;
+  border: 2px solid #43dbce;
+  cursor: crosshair;
+  letter-spacing: 2px;
 }
 
 /*  ícones do menu  */
 .icons-social {
   text-align: center;
   margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
 }
 
 .icons-social a {
@@ -103,11 +106,9 @@ body {
   font-size: 30px;
 }
 
-.icons-social i{
+.icons-social i {
   width: 100%;
 }
-
-
 /* FIM DAS CONFIGURAÇÕES DA SIDEBAR */
 
 /* Conteúdo  */
@@ -127,36 +128,97 @@ body {
   min-height: 60%;
   margin-left: 50px;
   padding: 30px;
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.4), rgb(255, 255, 255));   
-
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.4),
+    rgb(255, 255, 255)
+  );
 }
 
-.bg-card p{
+.bg-card p {
   width: 70%;
   font-size: 18px;
   font-weight: bold;
   color: rgb(61, 61, 61);
   text-align: start;
   margin: 20px 10px;
-
-
 }
 
 div.bg-card h2 > span,
 div.bg-card h3 > span,
-div.bg-card p > span
-{
-    color:#1d0979;
+div.bg-card p > span {
+  color: #1d0979;
 }
 
-div.bg-card h3{
-    margin-top:15px;
-    color: rgb(61, 61, 61);
-    font-size: 26px;
+div.bg-card h3 {
+  margin-top: 15px;
+  color: rgb(61, 61, 61);
+  font-size: 26px;
 }
 
-
-div.bg-card h2{
-  color:rgb(61, 61, 61);
+div.bg-card h2 {
+  color: rgb(61, 61, 61);
   font-size: 46px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: rgb(6, 255, 255);
+    grid-template-areas: "sidebar" "main";
+    background-image: url("../css/Peyote-mobile.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  .sidebar {
+    width: 100vw;
+    height: 40vh;
+  }
+  
+  .sidebar-container {
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    display: grid;
+    grid-template-areas: 
+    "img-sidebar menu" 
+    "icons-social icons-social" ;
+  }
+  
+  .img-sidebar {
+    border: 5px solid rgb(255, 255, 255);
+    grid-area: img-sidebar;
+    margin: 3px auto;
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .icons-social {
+    grid-area: icons-social;
+    
+  }
+  
+  .menu {
+    grid-area: menu;
+    
+  }
+  
+  .menu a {
+    display: inline-block;
+    width: 100%;
+  }
+
+
+  /*  ícones do menu  */
+  /* .icons-social {
+
+  }
+
+  .icons-social a {
+
+  }
+
+  .icons-social i {
+    
+  } */
 }
