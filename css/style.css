@@ -4,7 +4,6 @@
 
   font-family: "Saira Extra Condensed", sans-serif;
   box-sizing: border-box;
-  list-style: none;
 }
 
 body {
@@ -12,6 +11,7 @@ body {
   grid-template-areas: "sidebar-header conteudo";
   grid-template-columns: minmax(250px, 1fr) 5fr;
 
+  
   /* Configurações do backgroud */
   background-image: url("../css/Peyote.png");
   background-size: cover;
@@ -23,15 +23,15 @@ body {
   grid-area: sidebar-header;
   height: 100vh;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 40% 30px 30px 30px;
+  justify-content: center;
+  padding: 30px;
 
+  /* align-items: center; <-testar*/
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 .foto-menu {
   margin-bottom: 5px;
-  /* margin-bottom: 50% */
 }
 
 img {
@@ -40,7 +40,6 @@ img {
 
   border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
-  /* margin-bottom: 50% */
 }
 
 .foto {
@@ -54,12 +53,13 @@ img {
   flex-direction: column;
   height: 150px;
 
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 .menu a {
-  height: 25%;
+  height: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +71,7 @@ img {
   text-decoration: none;
   border: 0.1px solid whitesmoke;
   margin: 2px;
+  padding: 8px;
   font-size: 25px;
   font-weight: bold;
 }
@@ -78,26 +79,13 @@ img {
 /*  Animação dos botões do menu  */
 .menu a:hover {
   color: #43dbce;
-  -webkit-text-stroke: 0.3px #fff;
+  -webkit-text-stroke: 0.5px #fff;
   background-image: url("../css/Abstract.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   transform: scale(1.03);
   transition: 0.3s all;
   border: 2px solid #43dbce;
-  cursor: crosshair;
-  letter-spacing: 1.5px;
-}
-
-#clicado {
-  color: #ffc25f;
-  -webkit-text-stroke: 0.5px #5ff2ff;
-  background-image: url("../css/Abstract.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transform: scale(1.03);
-  transition: 0.3s all;
-  border: 2px solid #ffc25f;
   cursor: crosshair;
   letter-spacing: 1.5px;
 }
@@ -121,7 +109,6 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 28px;
-  margin: 10% auto;
 }
 
 .icones i {
@@ -187,7 +174,7 @@ img {
   }
 
   .sidebar-header {
-    height: 45vh;
+    height: 40vh;
     width: 100vw;
     min-width: 425px;
     grid-area: sidebar-header;
@@ -199,32 +186,19 @@ img {
 
   .foto-menu {
     display: flex;
-    margin: 5% auto;
-    align-items: center;
   }
 
   .foto {
     flex: 1;
-    margin: 1%;
   }
 
   .menu {
     flex: 1;
     height: 100%;
-    margin: 1%;
-  }
-
-  .menu a {
-    height: 100%;
-    margin: 0;
-  }
-
-  .icones a {
-    margin: 5% auto;
   }
 
   .conteudo {
-    height: 80vh;
+    height: 100vh;
     grid-area: conteudo;
     width: 100vw;
     display: flex;
