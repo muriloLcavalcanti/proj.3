@@ -1,15 +1,20 @@
-# projeto 3 e projeto 4 (dois em um)
+# projeto 3
 
 ## Sobre:
 
-Seguindo a sequência de projetos em série que decidi realizar para desafiar minhas habilidades, me deparei com a necessidade de dar continuidade
-no que originalmente iria ser apenas o projeto 3. A razão disso é que notei o quão desafiador poderia ser me aprofundar nesse projeto de autoria própria 
-a ponto de torná-lo realmente funcional como meu primeiro portfolio.
+Esta é a versão inicial do meu primeiro portfólio de projetos.
 
-Com esse projeto eu encerro esta série de desafios, a partir dos próximos irei iniciar meus estudos com o framework Angular.
+Meus objetivo de aprendizado (muito bem sucedido para minhas expectativas) foram de exercitar:
+- responsividade com CSS;
+- formatação com HTML;
+- a ferramenta de versionamento (git);
 
-<br>
+Tecnologias empregadas: HTML, CSS e JavaScript.
 
-**Ponto final do projeto 3: https://proj-3-1nb11ekns-murilolcavalcanti.vercel.app/**
+Ao decorrer do desenvolvimento deste experimento descobri como é importante haver um planejamento do tipo *wireframe* para possibilitar a entrega de um código para produção em tempo mais hábil.
 
-**Ponto de partida do projeto 4: https://proj-3-5jp0ki0uh-murilolcavalcanti.vercel.app/**
+Ao decorrer do desenvolvimento muitas ideias foram surgindo e sendo abandonadas. E para que o projeto não ficasse imcompleto, mesmo se trantando de uma versão inicial de protótipo para estudos, decidi dar continuidade nesse projeto a partir de um novo repositório.
+
+Acompanhe a continuidade dele: https://github.com/muriloLcavalcanti/Portfolio-prototipo/blob/main/README.md
+
+Nesta continuação vou permanecer com meus objetivos principais de aprendizado e acrecentar noções de desing e usabilidade (UI/UX), iteratividade com JavaScript e organização e apresentação do repositório, como conteudos extras.
